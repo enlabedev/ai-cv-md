@@ -4,6 +4,6 @@ import { CvService } from './cv.service';
 
 @Module({
   controllers: [CvController],
-  providers: [CvService]
+  providers: [CvService],
 })
 export class CvModule {}
