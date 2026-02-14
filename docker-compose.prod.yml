@@ -1,0 +1,8 @@
+services:
+  api:
+    build:
+      target: production
+    restart: always
+
+  nginx:
+    restart: always
