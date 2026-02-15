@@ -5,7 +5,7 @@ import { configureApp } from '../src/setup';
 let app: any;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule, { bodyParser: false });
   configureApp(app);
   await app.init();
   return app.getHttpAdapter().getInstance();
